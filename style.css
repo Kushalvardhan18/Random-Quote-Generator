@@ -1,0 +1,109 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: rgb(46, 41, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Main Container */
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image Container */
+  .randomImages {
+    position: relative;
+    width: 100%;
+    /* max-width: 600px; */
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .randomImages img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(50%);
+    border-radius: 15px;
+  }
+  
+  /* Quote and Author Text Overlay */
+  .quote, .author {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .quote {
+width: 60%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 40%;
+  }
+  
+  .author {
+    font-size: 1rem;
+    font-style: italic;
+    top: 60%;
+  }
+  
+  /* Buttons Container */
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 15px;
+  }
+  
+  /* Buttons Styling */
+  button, #shareQuote {
+    padding: 10px 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    background-color: #007BFF;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover, #shareQuote:hover {
+    background-color: #0056b3;
+  }
+  
+  #shareQuote {
+    background: transparent;
+    padding: 5px;
+  }
+  
+  #shareQuote img {
+    width: 30px;
+    height: 30px;
+  }
+  
