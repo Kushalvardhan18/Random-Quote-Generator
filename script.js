@@ -61,7 +61,9 @@ function shareQuote() {
 
 
 newQuoteBtn.addEventListener('click', () => {
-    Promise.all([generateQuote(), generateImages()]);
+   Promise.all([generateQuote(), generateImages()])
+        .then(() => console.log("Both quote and image loaded"))
+        .catch((error) => console.log("Error loading quote or image:", error));
 })
 
 copy.addEventListener('click', () => {
